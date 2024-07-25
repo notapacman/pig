@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000; /* Черный фон */
+    font-family: 'Roboto', sans-serif;
+   }
+   
+   .image-container {
+    position: relative;
+   }
+   
+   img {
+    width: 650px; /* Увеличена ширина изображения */
+    transition: filter 0.3s ease;
+    border-radius: 10px; /* Мягкие края изображения */
+    cursor: pointer; /* Курсор при наведении */
+   }
+   
+   img:hover {
+    filter: invert(1) grayscale(100%);
+   }
+   
+   .rectangle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.8); /* Черный фон для блока */
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    pointer-events: none; /* Чтобы блок не перехватывал события мыши пока невидим */
+   }
+   
+   h1,h2,h3 {
+    font-family:Verdana,Geneva,Tahoma,sans-serif;
+    margin:5px;
+    color:#ffddfd;
+   }
+   p {
+    margin:0;
+    color: azure;
+   } 
+   a {
+    color:inherit;
+   }
+   #m {
+    display:none;position:absolute;justify-content:center;align-items:center;text-align:center;width:100%;height:100%;z-index:1;backdrop-filter:blur(30px) brightness(30%);}
+   
+   .rectangle.active {
+    opacity: 1;
+    pointer-events: auto; /* Возвращаем события мыши, когда блок видим */
+   }
