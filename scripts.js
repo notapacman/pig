@@ -47,3 +47,23 @@ setInterval(() => {
         overlay.classList.remove('active'); // Закрываем блок, если курсор не над изображением и не над блоком
     }
 }, 100); // Проверяем каждые 100 миллисекунд
+// im a pidaras
+// im a pidaras
+// im a pidaras
+// im a pidaras
+
+// im a pidaras
+// im a pidaras
+// im a pidaras
+// im a pidaras
+
+// im a pidaras
+// im a pidaras// im a pidaras
+
+// im a pidaras
+// im a pidaras
+// im a pidaras
+// im a pidaras// im a pidaras
+
+// im a pidaras
+// im a pidaras
